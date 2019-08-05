@@ -2,5 +2,5 @@ set wrapscan
 set ignorecase 
 set smartcase 
 set incsearch
-set hlsearch
+set hlsearch "highlight current searching world
 

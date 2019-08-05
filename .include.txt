@@ -1,0 +1,5 @@
+colorscheme zenburn
+
+source ~/.vim/rc.d/apperance.vimrc 
+source ~/.vim/rc.d/search.vimrc
+source ~/.vim/rc.d/basic.vimrc
