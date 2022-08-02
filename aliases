@@ -1,0 +1,10 @@
+alias ll='ls -al'
+alias g='git '
+
+# infra
+alias d='docker '
+alias ecrl="aws ecr get-login-password --profile {profile} | docker login --username AWS --password-stdin {ecr}"
+
+# code
+alias bi='bundle exec install'
+alias jk='bundle exec jekyll serve --watch'
