@@ -1,0 +1,27 @@
+[user]
+	name = Junsu Jang
+	email = ko94deveric@gmail.com
+  #name=
+  #email=
+[alias]
+  st=status
+  a=add
+  aa=add .
+  ap=add -p
+  unstage=reset
+  p=pull
+  cp=cherry-pick
+  co=checkout
+  cob=checkout -b
+  b=branch
+  bd=branch -d
+  cb=branch --show-current
+  cmm=commit -m 
+  amend=commit --amend
+  rvt=revert
+  pcb=!git push origin `git branch --show-current`
+  # fpcb=!git push -f origin `git branch --show-current`
+  difc=diff --cached
+
+[url "ssh://git@github.com/"] 
+  insteadOf = https://github.com/
