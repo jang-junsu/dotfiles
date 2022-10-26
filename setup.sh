@@ -6,19 +6,16 @@ GREEN='\033[0;32m'
 
 VIMRC_FILE=~/.vimrc
 GITCONFIG_FILE=~/.gitconfig
+ZSHRC=~/.zshrc
 
-if 
 
-if [[ -f "~/zshrc" ]];then
-	echo "SIBALLLLLLL"
-fi
-if [[ -f  "$VIMRC_FILE" ]]; then
+if [ -e  $VIMRC_FILE ]; then
   echo "${ORANGE}Remove exist $VIMRC_FILE"
   rm $VIMRC_FILE
 fi
 
 
-if [[ -f  "~/$GITCONFIG_FILE" ]]; then
+if [ -e $GITCONFIG_FILE ]; then
   echo "${ORANGE}Remove exist $GITCONFIG_FILE"
   rm $GITCONFIG_FILE
 fi
@@ -27,8 +24,8 @@ fi
 
 # Setup Env varivable for rc file path
 echo "${ORANGE}Set up env variable for rc file path"
-echo "export RCPATH=~/dotfiles" >> ~/.zshrc 
-source ~/.zshrc
+echo "export RCPATH=~/dotfiles" >> $ZSHRC
+source $ZSHRC
 
 echo "${ORANGE}Setup Vimrc"
 ln -s $RCPATH/vimrc $VIMRC_FILE
@@ -41,8 +38,8 @@ echo "${GREEN}Please open .gitconfig and fill user attributes"
 
 # setup aliases
 echo "${ORANGE}Setup Aliases"
-echo "source $RCPATH/aliasrc" >> ~/.zshrc
-source ~/.zshrc
+echo "source $RCPATH/aliasrc" >> $ZSHRC 
+source $ZSHRC 
 
 echo "${GREEN}Terminal Set up Complete"
 

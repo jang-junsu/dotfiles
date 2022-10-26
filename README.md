@@ -1,8 +1,9 @@
 # DotFiles For Setup Terminal
-Include 
+It includes 
 ```
 Vim
-GitAlias
+Git Config
+Aliases
 ```
 
 # Setup
@@ -10,18 +11,14 @@ Will include by `setup.sh` file
 ```shell
 # clone on home directory 
 
-# Depending on vim-plug
-$ ln -s .dotfiles/.vimrc .vimrc
-
-$ ln -s .dotfiles/.gitconfig .gitconfig
-$ vim .gitconfig # Fill user attributes
-
-$ echo 'source ~/.dotfiles/.aliases' >> ~/.zshrc
+source ~/dotfiles/setup.sh
 ```
 
 # Packages
 ## Anyenv
 ```shell
+# it will be include to setup script
+
 $ brew install anyenv
 $ echo 'eval "$(anyenv init -)"' >> ~/.zshrc
 $ exec $SHELL -l
