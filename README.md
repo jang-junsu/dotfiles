@@ -8,13 +8,10 @@ GitAlias
 # Setup
 Will include by `setup.sh` file
 ```shell
-# Should clone on home directory 
-
-$ git clone https://github.com/red-drop/.dotfiles.git
+# clone on home directory 
 
 # Depending on vim-plug
 $ ln -s .dotfiles/.vimrc .vimrc
-$ vim .vimrc # Execute :PlugInstall on command mode
 
 $ ln -s .dotfiles/.gitconfig .gitconfig
 $ vim .gitconfig # Fill user attributes
