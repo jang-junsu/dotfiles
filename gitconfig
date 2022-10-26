@@ -1,8 +1,6 @@
 [user]
-	name = Junsu Jang
-	email = ko94deveric@gmail.com
-  #name=
-  #email=
+	name = 
+	email = 
 [alias]
   st=status
   a=add
