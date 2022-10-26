@@ -30,3 +30,11 @@ $ anyenv update
 $ anyenv install -l
 $ anyenv install [rbenv nodenv jenv goenv]
 ```
+## fzf
+[fzf](https://github.com/junegunn/fzf)
+
+## bat 
+[bat](https://github.com/sharkdp/bat)
+
+## tldr
+[tldr](https://tldr.sh/)]
