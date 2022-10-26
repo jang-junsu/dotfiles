@@ -1,0 +1,2 @@
+source $RCPATH/aliases/generalrc
+source $RCPATH/aliases/rubyrc

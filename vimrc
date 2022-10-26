@@ -1,6 +1,6 @@
-source ~/.dotfiles/vimrcs/interfacerc
-source ~/.dotfiles/vimrcs/indentrc
-source ~/.dotfiles/vimrcs/searchrc
+source $RCPATH/vimrcs/interfacerc
+source $RCPATH/vimrcs/indentrc
+source $RCPATH/vimrcs/searchrc
 
 filetype indent on
 highlight Comment term=bold cterm=bold ctermfg=8

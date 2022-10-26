@@ -1,38 +1,48 @@
 #!/bin/bash
 
-VIMRC_FILE=.vimrc
-GITCONFIG_FILE=.gitconfig
+NOCOLOR='\033[0m'
+ORANGE='\033[0;33m'
+GREEN='\033[0;32m'
 
-echo "Move to home directory"
-cd ~
+VIMRC_FILE=~/.vimrc
+GITCONFIG_FILE=~/.gitconfig
 
+if 
+
+if [[ -f "~/zshrc" ]];then
+	echo "SIBALLLLLLL"
+fi
 if [[ -f  "$VIMRC_FILE" ]]; then
-  echo "Remove exist $VIMRC_FILE"
+  echo "${ORANGE}Remove exist $VIMRC_FILE"
   rm $VIMRC_FILE
 fi
 
 
-if [[ -f  "$GITCONFIG_FILE" ]]; then
-  echo "Remove exist $GITCONFIG_FILE"
+if [[ -f  "~/$GITCONFIG_FILE" ]]; then
+  echo "${ORANGE}Remove exist $GITCONFIG_FILE"
   rm $GITCONFIG_FILE
 fi
 
-# Setup vimrc
-echo "Setup Vim"
-ln -s ~/.dotfiles/.vimrc .vimrc
+# Setup rcs
 
-echo "Please open .vimrc and execute :PlugInstall"
+# Setup Env varivable for rc file path
+echo "${ORANGE}Set up env variable for rc file path"
+echo "export RCPATH=~/dotfiles" >> ~/.zshrc 
+source ~/.zshrc
+
+echo "${ORANGE}Setup Vimrc"
+ln -s $RCPATH/vimrc $VIMRC_FILE
 
 # Setup gitconfig
-echo "Setup git config"
-ln -s ~/.dotfiles/.gitconfig .gitconfig
+echo "${ORANGE}Setup git config"
+ln -s $RCPATH/gitconfig $GITCONFIG_FILE 
 
-echo "Please open .gitconfig and fill user attributes"
+echo "${GREEN}Please open .gitconfig and fill user attributes"
 
 # setup aliases
-echo "Setup Aliases"
-echo "source ~/.dotfiles/.aliases" >> ~/.zshrc
-echo "source ~/.zshrc"
+echo "${ORANGE}Setup Aliases"
+echo "source $RCPATH/aliasrc" >> ~/.zshrc
+source ~/.zshrc
 
-echo "Terminal Set up Complete"
+echo "${GREEN}Terminal Set up Complete"
 

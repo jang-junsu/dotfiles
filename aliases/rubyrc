@@ -1,0 +1,2 @@
+alias bi='bundle exec install'
+alias blog='bundle exec jekyll server --watch'
