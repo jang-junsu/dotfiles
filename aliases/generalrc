@@ -1,3 +1,5 @@
-alias ll='ls -al'
 alias g='git '
+alias ls="lsd --no-symlink"
+alias ll="lsd -l --no-symlink"
+alias lt="lsd --tree --no-symlink"
 
