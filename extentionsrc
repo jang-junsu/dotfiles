@@ -1,0 +1,8 @@
+function pet-select() {
+  BUFFER=$(pet search | fzf --ansi --query "$LBUFFER")
+  CURSOR=$#BUFFER
+  zle redisplay
+}
+
+zle -N pet-select
+bindkey '^S' pet-select
