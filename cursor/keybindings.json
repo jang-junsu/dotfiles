@@ -1,0 +1,50 @@
+[
+  // move tabs
+  {
+    "key": "shift+cmd+[",
+    "command": "composer.previousChatTab",
+    "when": "composerFocused && !editorTextFocus"
+  },
+  // {
+  //   "key": "cmd+[",
+  //   "command": "-composer.previousChatTab",
+  //   "when": "composerFocused && !editorTextFocus"
+  // },
+  {
+    "key": "alt+h",
+    "command": "workbench.action.splitEditorLeft"
+  },
+  // code jump
+  {
+    "key": "ctrl+-",
+    "command": "-workbench.action.navigateBack",
+    "when": "canNavigateBack"
+  },
+  {
+    "key": "ctrl+shift+-",
+    "command": "-workbench.action.navigateForward",
+    "when": "canNavigateForward"
+  },
+  {
+    "key": "cmd+[",
+    "command": "workbench.action.navigateBack",
+    "when": "canNavigateBack"
+  },
+  {
+    "key": "cmd+]",
+    "command": "workbench.action.navigateForward",
+    "when": "canNavigateForward"
+  },
+  // indent
+  {
+    "key": "ctrl+-",
+    "command": "editor.action.outdentLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+=",
+    "command": "editor.action.indentLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+]
+
