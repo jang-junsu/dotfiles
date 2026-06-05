@@ -1,0 +1,36 @@
+{
+    "window.autoDetectColorScheme": true,
+    "cursor.general.disableHttp2": true,
+    "window.systemColorTheme": "dark",
+    "vim.hlsearch": true,
+    "vim.smartcase": true,
+    "vim.searchMatchColor": "rgba(255, 100, 0, 0.8)",
+    "vim.searchHighlightColor": "rgba(255, 165, 0, 0.4)",
+    "vim.searchHighlightTextColor": "#ffffff",
+    "vim.showmodename": true,
+    "vim.showcmd": true,
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors.normal": ["#8fbfdc", "#000000"],
+    "vim.statusBarColors.insert": ["#e53935", "#ffffff"],
+    "vim.statusBarColors.visual": ["#a8e63f", "#000000"],
+    "vim.statusBarColors.visualline": ["#a8e63f", "#000000"],
+    "vim.statusBarColors.visualblock": ["#a8e63f", "#000000"],
+    "vim.statusBarColors.replace": ["#8fbfdc", "#000000"],
+    "vim.statusBarColors.commandlineinprogress": ["#8fbfdc", "#000000"],
+    "vim.statusBarColors.searchinprogressmode": ["#8fbfdc", "#000000"],
+    "vim.statusBarStrings": {
+        "normal": "NORMAL",
+        "insert": "INSERT",
+        "visual": "VISUAL",
+        "visualline": "V·LINE",
+        "visualblock": "V·BLOCK",
+        "replace": "REPLACE"
+    },
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#8fbfdc",
+        "statusBar.noFolderBackground": "#8fbfdc",
+        "statusBar.debuggingBackground": "#8fbfdc",
+        "statusBar.foreground": "#000000",
+        "statusBar.debuggingForeground": "#000000"
+    }
+}
